@@ -29,9 +29,7 @@ def add_gaussian_shifts(depth, std=1/2.0):
     return depth_interp
     
 
-def filterDisp(disp, dot_pattern_, invalid_disp_):
-
-    size_filt_ = 9
+def filterDisp(disp, dot_pattern_, invalid_disp_, size_filt_=9):
 
     xx = np.linspace(0, size_filt_-1, size_filt_)
     yy = np.linspace(0, size_filt_-1, size_filt_)
